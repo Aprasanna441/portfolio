@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title%}Skills{% endblock %}
+{% block content %}
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<style>
+   body{
+
+background-color: wheat;
+}
+
+
+h1,h2,h3{
+text-align: center;
+
+}h1{
+text-decoration: underline;
+color:Red;
+}
+h2{
+color:rgb(42, 196, 37);
+}
+
+
+
+
+</style>
+<body>
+    <div class="container">
+      <h1>My Skills</h1><br>
+    {% for skill in skills %}
+<div style="margin:20px;" class="btn btn-primary">{{skill}}</div>
+{% endfor %}
+
+
+      </div>
+</body>
+{% endblock %}
