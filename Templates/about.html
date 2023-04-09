@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+
+{% block title%}About Me{% endblock %}
+{% block content %}
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<style>
+ body{
+  background-color: wheat;
+ }
+
+
+h1,h2,h3{
+text-align: center;
+
+}h1{
+text-decoration: underline;
+color:Red;
+}
+h2{
+color:rgb(42, 196, 37);
+}
+
+
+</style>
+<body>
+<div class="container">
+    <div class="row">
+     <h1>About Me</h1>
+     <h2>नाम के हो?</h2>
+<h3> Prasanna Acharya</h3><br><br><br><br><br><br><br>
+
+<h2>कति पढियो?</h2>
+<h3>B.Sc.CSIT 6th semester</h3>
+<br><br><br>
+
+
+
+      
+     
+    </div>
+  </div>
+</body>
+
+{% endblock %}
